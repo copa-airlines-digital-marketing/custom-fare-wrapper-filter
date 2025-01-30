@@ -634,3 +634,403 @@ video {
   --letter-spacing-d2: 0.0625rem;
   --letter-spacing-d3: 0rem;
 }
+
+.container {
+  max-width: calc(100% - 2rem);
+}
+
+@media (min-width: 600px) {
+  .container {
+    max-width: 560px;
+  }
+}
+
+@media (min-width: 960px) {
+  .container {
+    max-width: calc(100% - 144px);
+  }
+}
+
+@media (min-width: 1367px) {
+  .container {
+    max-width: 1224px;
+  }
+}
+
+.col-start-1 {
+  grid-column-start: 1;
+}
+
+.col-start-3 {
+  grid-column-start: 3;
+}
+
+.col-end-3 {
+  grid-column-end: 3;
+}
+
+.row-span-full {
+  grid-row: 1 / -1;
+}
+
+.row-start-2 {
+  grid-row-start: 2;
+}
+
+.row-start-3 {
+  grid-row-start: 3;
+}
+
+.row-end-2 {
+  grid-row-end: 2;
+}
+
+.row-end-3 {
+  grid-row-end: 3;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mt-0\.5 {
+  margin-top: 0.125rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.hidden {
+  display: none;
+}
+
+.h-3 {
+  height: 0.75rem;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-\[10\.3px\] {
+  height: 10.3px;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-\[11\.6px\] {
+  width: 11.6px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.max-w-24 {
+  max-width: 6rem;
+}
+
+.max-w-40 {
+  max-width: 10rem;
+}
+
+.max-w-\[400px\] {
+  max-width: 400px;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.grid-cols-\[8px_116px_auto_8px\] {
+  grid-template-columns: 8px 116px auto 8px;
+}
+
+.grid-rows-\[8px_auto_auto_8px\] {
+  grid-template-rows: 8px auto auto 8px;
+}
+
+.grid-rows-subgrid {
+  grid-template-rows: subgrid;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.gap-y-2 {
+  row-gap: 0.5rem;
+}
+
+.self-end {
+  align-self: flex-end;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
+.bg-grey-300 {
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--color-grey-300) / var(--tw-bg-opacity, 1));
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.font-gilroy {
+  font-family: Gilroy, Helvetica, Arial, sans-serif;
+}
+
+.font-suisse {
+  font-family: "Suisse Int'l", Helvetica, Arial, sans-serif;
+}
+
+.text-b {
+  font-size: var(--font-size-b);
+  line-height: var(--line-height-b);
+  letter-spacing: var(--letter-spacing-b);
+}
+
+.text-d1 {
+  font-size: var(--font-size-d1);
+  line-height: var(--line-height-d1);
+  letter-spacing: var(--letter-spacing-d1);
+}
+
+.text-d2 {
+  font-size: var(--font-size-d2);
+  line-height: var(--line-height-d2);
+  letter-spacing: var(--letter-spacing-d2);
+}
+
+.text-d3 {
+  font-size: var(--font-size-d3);
+  line-height: var(--line-height-d3);
+  letter-spacing: var(--letter-spacing-d3);
+}
+
+.text-u1 {
+  font-size: var(--font-size-u1);
+  line-height: var(--line-height-u1);
+  letter-spacing: var(--letter-spacing-u1);
+}
+
+.text-u2 {
+  font-size: var(--font-size-u2);
+  line-height: var(--line-height-u2);
+  letter-spacing: var(--letter-spacing-u2);
+}
+
+.text-u3 {
+  font-size: var(--font-size-u3);
+  line-height: var(--line-height-u3);
+  letter-spacing: var(--letter-spacing-u3);
+}
+
+.text-u4 {
+  font-size: var(--font-size-u4);
+  line-height: var(--line-height-u4);
+  letter-spacing: var(--letter-spacing-u4);
+}
+
+.text-u5 {
+  font-size: var(--font-size-u5);
+  line-height: var(--line-height-u5);
+  letter-spacing: var(--letter-spacing-u5);
+}
+
+.text-u6 {
+  font-size: var(--font-size-u6);
+  line-height: var(--line-height-u6);
+  letter-spacing: var(--letter-spacing-u6);
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-common-white {
+  --tw-text-opacity: 1;
+  color: hsl(var(--color-common-white) / var(--tw-text-opacity, 1));
+}
+
+.text-grey-200 {
+  --tw-text-opacity: 1;
+  color: hsl(var(--color-grey-200) / var(--tw-text-opacity, 1));
+}
+
+.text-grey-600 {
+  --tw-text-opacity: 1;
+  color: hsl(var(--color-grey-600) / var(--tw-text-opacity, 1));
+}
+
+.text-grey-700 {
+  --tw-text-opacity: 1;
+  color: hsl(var(--color-grey-700) / var(--tw-text-opacity, 1));
+}
+
+.text-primary {
+  --tw-text-opacity: 1;
+  color: hsl(var(--color-primary) / var(--tw-text-opacity, 1));
+}
+
+.text-primary-dark {
+  --tw-text-opacity: 1;
+  color: hsl(var(--color-primary-dark) / var(--tw-text-opacity, 1));
+}
+
+.text-primary-light {
+  --tw-text-opacity: 1;
+  color: hsl(var(--color-primary-light) / var(--tw-text-opacity, 1));
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+.overline {
+  text-decoration-line: overline;
+}
+
+.line-through {
+  text-decoration-line: line-through;
+}
+
+.outline {
+  outline-style: solid;
+}
+
+.outline-1 {
+  outline-width: 1px;
+}
+
+.outline-grey-300 {
+  outline-color: hsl(var(--color-grey-300) / 1);
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
+}
+
+.hover\:outline-2:hover {
+  outline-width: 2px;
+}
+
+.hover\:outline-primary-ultralight:hover {
+  outline-color: hsl(var(--color-primary-ultralight) / 1);
+}
+
+.focus\:outline-2:focus {
+  outline-width: 2px;
+}
+
+.focus\:outline-primary-ultralight:focus {
+  outline-color: hsl(var(--color-primary-ultralight) / 1);
+}
+
+@media (min-width: 1367px) {
+  .lg\:text-u1 {
+    font-size: var(--font-size-u1);
+    line-height: var(--line-height-u1);
+    letter-spacing: var(--letter-spacing-u1);
+  }
+}

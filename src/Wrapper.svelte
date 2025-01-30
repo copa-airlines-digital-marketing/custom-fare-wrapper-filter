@@ -47,6 +47,6 @@
     {/if}
     
 <div bind:this={parent}>
-    <slot></slot>
+  <slot></slot>
 </div>
 
