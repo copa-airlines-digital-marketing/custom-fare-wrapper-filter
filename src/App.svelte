@@ -1,4 +1,5 @@
 <svelte:options customElement="custom-wrapper" />
+
 <script lang="ts">
   import Wrapper from './Wrapper.svelte';
   export let country: string = 'co' ;
@@ -6,7 +7,8 @@
 </script>
 
 <Wrapper {country} {lang}>
-    <slot></slot>
+<slot></slot>
+
 </Wrapper>
 
 
